@@ -33,4 +33,4 @@ JSON RAW: {
             "type": "Lenovo",
             "status": "SERVER_DOWN"
         }
- 
+ GET: http://localhost:8080/server/ping/192.168.1.160 // should ping server
