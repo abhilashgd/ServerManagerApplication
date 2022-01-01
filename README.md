@@ -1,4 +1,15 @@
 # ServerManagerApplication
+ _____                                         __  __
+  / ____|                                       |  \/  |
+ | (___     ___   _ __  __   __   ___   _ __    | \  / |   __ _   _ __     __ _    __ _    ___   _ __
+  \___ \   / _ \ | '__| \ \ / /  / _ \ | '__|   | |\/| |  / _` | | '_ \   / _` |  / _` |  / _ \ | '__|
+  ____) | |  __/ | |     \ V /  |  __/ | |      | |  | | | (_| | | | | | | (_| | | (_| | |  __/ | |
+ |_____/   \___| |_|      \_/    \___| |_|      |_|  |_|  \__,_| |_| |_|  \__,_|  \__, |  \___| |_|
+                                                                                   __/ |
+                                                                                  |___/
+                                                                                  
+                                                                                  
+                                                                                  
 Manages server status and gives log of status information. front end - angular js, backend- sbring boot, DB-MySQL
 
 //DOCKER COMMAND TO RUN MYSQL DB: docker container run --name serverdb -e MYSQL_ROOT_PASSWORD=letmein -d -p 3306:3306 mysql
