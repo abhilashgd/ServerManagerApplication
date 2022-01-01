@@ -34,3 +34,10 @@ JSON RAW: {
             "status": "SERVER_DOWN"
         }
  GET: http://localhost:8080/server/ping/192.168.1.160 // should ping server
+ 
+ 
+#1. ANGULAR CLI: 
+website https://www.npmjs.com/package/@angular/cli
+2. INSTALL COMMAND: brew install angular-cli
+3. ng new serverapp //to create a new app
+4. code .  //to open files in current directory in visual Code
