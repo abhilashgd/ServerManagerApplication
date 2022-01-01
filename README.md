@@ -21,3 +21,16 @@ grant all on serverdb.* to 'testuser'@'%';
 show databases;
 
 //Additional Tools: brew install --cask mysqlworkbench --> for DB inspection
+
+#POSTMAN TESTING
+GET: http://localhost:8080/server/list // should list all servers
+GET: http://localhost:8080/server/get/2 //should list second object
+POST: http://localhost:8080/server/save  //should give created response 200 OK
+JSON RAW: {
+            "ipAddress": "192.168.1.195",
+            "name": "Ubuntu Linux",
+            "memory": "32GB",
+            "type": "Lenovo",
+            "status": "SERVER_DOWN"
+        }
+ 
