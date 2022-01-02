@@ -41,3 +41,5 @@ website https://www.npmjs.com/package/@angular/cli
 2. INSTALL COMMAND: brew install angular-cli
 3. ng new serverapp //to create a new app
 4. code .  //to open files in current directory in visual Code
+5. ng g service service/server
+6. ng serve --open
