@@ -43,3 +43,4 @@ website https://www.npmjs.com/package/@angular/cli
 4. code .  //to open files in current directory in visual Code
 5. ng g service service/server
 6. ng serve --open
+7. http://localhost:4200 //for angular app access
