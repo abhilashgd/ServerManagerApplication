@@ -17,6 +17,7 @@ import java.net.UnknownHostException;
 import java.util.Collection;
 import java.util.Random;
 
+import static io.gateways.server.constants.constants.IMAGE_NAMES;
 import static io.gateways.server.enumeration.Status.SERVER_DOWN;
 import static io.gateways.server.enumeration.Status.SERVER_UP;
 import static java.lang.Boolean.TRUE;
@@ -79,7 +80,7 @@ public class ServerServiceImpl implements ServerService {
     }
 
     private String setServerImageUrl() {
-        String[] imageNames = {"server1.png","server2.png","server3.png","server4.png"};
+        String[] imageNames = IMAGE_NAMES;
 
         return ServletUriComponentsBuilder
                 .fromCurrentContextPath()

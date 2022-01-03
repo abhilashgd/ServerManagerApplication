@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import static io.gateways.server.constants.constants.IMAGE_PATH;
+import static io.gateways.server.constants.constants.LIMIT;
 import static io.gateways.server.enumeration.Status.SERVER_UP;
 import static java.time.LocalDateTime.now;
 import static java.util.Map.of;
@@ -35,7 +37,7 @@ public class ServerResource {
         return ResponseEntity.ok(
                 Response.builder()
                         .timeStamp(now())
-                        .data(of("servers",serverService.list(30)))
+                        .data(of("servers",serverService.list(LIMIT)))
                         .message("Servers retrieved")
                         .status(OK)
                         .statusCode(OK.value())
@@ -102,7 +104,7 @@ public class ServerResource {
     @GetMapping(path="/image/{fileName}",produces = IMAGE_PNG_VALUE)
     public byte[] getServerImage(@PathVariable("fileName") String fileName) throws IOException {
         return Files.readAllBytes(Paths.get(System.getProperty("user.home")
-                +"/Documents/for_git_push/ServerManagerApplication/src/main/resources/images/" +
+                +IMAGE_PATH +
                 fileName));
     }
 
