@@ -44,3 +44,4 @@ website https://www.npmjs.com/package/@angular/cli
 5. ng g service service/server
 6. ng serve --open
 7. http://localhost:4200 //for angular app access
+8. to generate data for testing: https://www.mockaroo.com/
